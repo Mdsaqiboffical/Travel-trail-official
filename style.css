@@ -8,16 +8,16 @@
     font-family: "Robboto", "Poppin";
 }
 
+body,
+html {
+    background: rgb(92, 92, 92);
+    background: linear-gradient(0deg, rgb(124, 149, 171) 11%, rgb(91, 185, 171) 51%, rgba(172, 201, 236, 1) 74%, rgb(255, 255, 255) 98%);
+}
+
 /* Search baar */
 .wrap-input-17 * {
     box-sizing: border-box;
 
-}
-
-#main {
-    background-image: url(assets/backgroung-img-4.jpg);
-    /* background-repeat: no-repeat; */
-    background-size: contain;
 }
 
 .wrap-input-17 .search-box {
@@ -116,10 +116,10 @@
 
 .navbar {
     background: transparent;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(8px);
 }
 
-.nav-item:hover {
+.nav-hover:hover {
     transform: scale(1.1);
     transition: all 300ms ease;
 }
@@ -269,24 +269,40 @@
     height: 150px;
     width: 150px;
     border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.03);
+        transition: all 300ms ease;
+    }
 }
 
 .sec-02-img-02 img {
     height: 150px;
     width: 180px;
     border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.03);
+        transition: all 300ms ease;
+    }
 }
 
 .sec-02-img-03 img {
     height: 150px;
     width: 150px;
     border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.03);
+        transition: all 300ms ease;
+    }
 }
 
 .text-wrapper {
     color: #000;
     font-size: 1.2rem;
     font-weight: 900;
+    margin-top: 1rem;
 }
 
 .text-inner {
@@ -301,30 +317,55 @@
     height: 350px;
     width: 100%;
     border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: all 300ms ease;
+    }
 }
 
 .sec-03-img-02 img {
     height: 350px;
     width: 100%;
     border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: all 300ms ease;
+    }
 }
 
 .Sec-03-img-03 img {
     height: 250px;
     width: 100%;
     border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: all 300ms ease;
+    }
 }
 
 .Sec-03-img-04 img {
     height: 250px;
     width: 100%;
     border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: all 300ms ease;
+    }
 }
 
 .Sec-03-img-05 img {
     height: 250px;
     width: 100%;
     border-radius: 10px;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: all 300ms ease;
+    }
 }
 
 .text-wrapper-sec-3 {
@@ -449,7 +490,7 @@ p {
 #footer {
     height: 620px;
     width: 100%;
-    background-color: black;
+    background-color: #000;
     color: #fff;
     align-content: center;
     background-image: url(assets/mountain-tree.jpeg);
@@ -489,12 +530,39 @@ p {
 }
 
 .submit-btn:hover {
-    border-radius: 3px;
-    background-color: #fff;
-    color: #000000;
     cursor: pointer;
     transition: 200ms ease;
-    background-color: #9AB415;
+    background-color: #b5bb9afb;
+}
+
+.icon .fb-hover:hover {
+    color: #0000ffb7;
+    transition: all 200ms ease-in-out;
+}
+
+.icon .insta-hover:hover {
+    color: #be003f;
+    transition: all 200ms ease-in-out;
+}
+
+.icon .x-hover:hover {
+    color: #00ebfc;
+    transition: all 200ms ease-in-out;
+}
+
+.icon .link-hover:hover {
+    color: #ff7b00;
+    transition: all 200ms ease-in-out;
+}
+
+.icon .git-hover:hover {
+    color: #757575;
+    transition: all 200ms ease-in-out;
+}
+
+.icon .up-hover:hover {
+    color: #3cff00;
+    transition: all 200ms ease-in-out;
 }
 
 /* footer Close */
@@ -504,6 +572,46 @@ p {
     /* transform: scale(1.1); */
     transform: scale(1.02);
     transition: all 150ms ease-in-out;
-    text-decoration: underline;
     cursor: pointer;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(71, 71, 71);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* border-radius: 10px; */
+}
+
+
+/* Extra Work */
+
+/* #main {
+    /* height: 100vh; */
+/* background-image: url(assets/backgroung-img-4.jpg); */
+/* background-repeat: no-repeat; 
+    background-size: contain;
+} 
+#main-02 {
+    /* height: 100vh; 
+    background-image: url(https://www.agilitypr.com/wp-content/uploads/2022/10/travel.jpg);
+    background-repeat: no-repeat;
+    /* background-size: contain; 
+    background-size: cover;
+    background-position: 90%;
+} */
